@@ -34,8 +34,15 @@ body {
 }
 /* Header */
 .header {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   grid-area: 1 / 2 / 2 / 4;
   background-color: blue;
+}
+
+#search-bar {
+  grid-area: 1 / 1 / 2 / 2;
+  border: 2px solid black;
 }
 
 .main-content {
