@@ -173,7 +173,7 @@ button {
   grid-area: 2 / 2 / 4 / 4;
   background-color: var(--main-bg-color);
   gap: 1rem;
-  padding: 2.5rem;
+  padding: 5rem 2.5rem;
 }
 
 #project-cards {
@@ -198,14 +198,13 @@ button {
   display: flex;
   justify-content: flex-end;
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 #announcement-card {
   background-color: var(--light-bg-color);
   border-radius: 10px;
   height: fit-content;
-  /* margin: 4rem 2rem 4rem 0.5rem; */
   padding: 2rem;
   box-shadow: var(--box-shadow);
 }
@@ -227,7 +226,7 @@ button {
   background-color: var(--light-bg-color);
   border-radius: 10px;
   height: fit-content;
-  margin: 6.2rem 2rem 4rem 0.5rem;
+
   padding: 2rem;
   box-shadow: var(--box-shadow);
 }
