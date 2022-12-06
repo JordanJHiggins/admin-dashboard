@@ -132,7 +132,18 @@ button {
 }
 
 #user-greeting {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   grid-area: 2 / 1 / 3 / 2;
+}
+.user-greeting-flex p {
+  margin: 0rem 0rem 0.5rem;
+  font-weight: 900;
+}
+
+.user-greeting-flex p:nth-child(2) {
+  font-size: 1.5rem;
 }
 
 #user-info {
