@@ -192,7 +192,7 @@ button {
   grid-area: 2 / 2 / 4 / 4;
   background-color: var(--main-bg-color);
   gap: 1rem;
-  padding: 5rem 5rem 2.5rem;
+  padding: 2rem 4rem 2.5rem;
 }
 
 #project-cards {
@@ -254,10 +254,14 @@ button {
 }
 
 #trending-card {
-  grid-area: 2 / 2 / 3 / 3;
   background-color: var(--light-bg-color);
   border-radius: 10px;
   height: fit-content;
   padding: 2rem;
   box-shadow: var(--box-shadow);
+}
+
+.projects-title,
+.announcement-title {
+  margin-top: 0;
 }
