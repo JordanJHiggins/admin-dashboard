@@ -114,18 +114,14 @@ button {
   padding: 15px 35px;
 }
 
-#buttons button:nth-child(3) {
-  margin-right: 3rem;
-}
-
 #buttons {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  flex-wrap: wrap;
   grid-area: 2 / 2 / 3 / 4;
   gap: 1.5rem;
-  min-width: fit-content;
-  margin-left: 3rem;
+  margin: 1rem 2rem;
 }
 
 #search-bar {
@@ -135,12 +131,15 @@ button {
 }
 
 #search-bar input {
+  background-image: url(images/Icons/search_FILL0_wght400_GRAD0_opsz24.svg);
+  background-repeat: no-repeat;
+  background-position: 2% 50%;
   align-self: center;
   border-radius: 25px;
   border: none 1px var(--main-bg-color);
   background-color: var(--main-bg-color);
-  padding: 0.7rem 1rem;
-  width: max(50%, 650px);
+  padding: 0.7rem 2rem;
+  width: clamp(250px, 30vw, 650px);
   font-family: Roboto;
 }
 
@@ -150,6 +149,7 @@ button {
   align-items: center;
   grid-area: 2 / 1 / 3 / 2;
   min-width: fit-content;
+  margin-right: 2rem;
 }
 .user-greeting-flex p {
   margin: 0rem 0rem 0.5rem;
@@ -164,18 +164,27 @@ button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding-right: 3rem;
+  flex-wrap: wrap;
+  /* padding-right: 3rem; */
   grid-area: 1 / 2 / 2 / 4;
+  margin: 1rem 4rem;
 }
 
-.profile-placeholder {
-  background-color: orange;
+.profile-image {
+  outline: #4845d2 1px solid;
   border-radius: 50%;
   margin: 0rem 1.5rem 0rem 2.5rem;
   width: 50px;
   height: 50px;
 }
 
+.profile-image2 {
+  outline: #4845d2 1px solid;
+  border-radius: 50%;
+  margin: 0rem 1.5rem 0rem 2.5rem;
+  width: 75px;
+  height: 75px;
+}
 /* Main content */
 .main-content {
   display: grid;
@@ -183,7 +192,7 @@ button {
   grid-area: 2 / 2 / 4 / 4;
   background-color: var(--main-bg-color);
   gap: 1rem;
-  padding: 5rem 2.5rem;
+  padding: 5rem 5rem 2.5rem;
 }
 
 #project-cards {
@@ -191,7 +200,6 @@ button {
   grid-area: 1 / 1 / 3 / 2;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(3, 1fr);
-
   gap: 1.5rem;
   margin-right: 0;
   background-color: var(--main-bg-color);
