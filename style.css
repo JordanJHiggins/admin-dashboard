@@ -91,10 +91,10 @@ ul li:nth-child(7) {
   text-decoration: none;
   color: #fafaf9;
 }
-.bing {
-  display: inline;
-}
 
+.nav-item a:hover {
+  color: #a3a2ff;
+}
 /* Header */
 .header {
   display: grid;
@@ -112,6 +112,12 @@ button {
   border-radius: 25px;
   border-style: none;
   padding: 15px 35px;
+}
+
+button:active {
+  background-color: #a3a2ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #buttons {
@@ -170,7 +176,8 @@ button {
   margin: 1rem 4rem;
 }
 
-.profile-image {
+.profile-image,
+.trending-image {
   outline: #4845d2 1px solid;
   border-radius: 50%;
   margin: 0rem 1.5rem 0rem 2.5rem;
@@ -254,6 +261,8 @@ button {
 }
 
 #trending-card {
+  display: flex;
+  flex-direction: column;
   background-color: var(--light-bg-color);
   border-radius: 10px;
   height: fit-content;
@@ -264,4 +273,22 @@ button {
 .projects-title,
 .announcement-title {
   margin-top: 0;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+}
+
+.trending-image {
+  margin: 0rem 1rem;
+}
+
+.trending-text p:first-child {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.trending-text p:nth-child(2) {
+  color: var(--grey-text-color);
 }
