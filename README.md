@@ -6,4 +6,4 @@ This admin-dashboard project was built with vanilla CSS, no frameworks or prepro
 -  A navigation bar that houses links to other areas of the site.
 -  And a main content section where projects, announcements and trending users are found.
 
-Live link:
+Live link: https://jordanjhiggins.github.io/admin-dashboard/
