@@ -114,12 +114,13 @@ button {
   padding: 15px 35px;
 }
 
-button:active {
+button:hover {
   background-color: #a3a2ff;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  box-shadow: 0 2px #666;
 }
-
+button:active {
+  transform: translateY(1px);
+}
 #buttons {
   display: flex;
   justify-content: flex-end;
@@ -175,7 +176,10 @@ button:active {
   grid-area: 1 / 2 / 2 / 4;
   margin: 1rem 4rem;
 }
-
+#user-name:hover {
+  color: #a3a2ff;
+  cursor: pointer;
+}
 .profile-image,
 .trending-image {
   outline: #4845d2 1px solid;
@@ -183,6 +187,7 @@ button:active {
   margin: 0rem 1.5rem 0rem 2.5rem;
   width: 50px;
   height: 50px;
+  cursor: pointer;
 }
 
 .profile-image2 {
@@ -192,6 +197,7 @@ button:active {
   width: 75px;
   height: 75px;
 }
+
 /* Main content */
 .main-content {
   display: grid;
